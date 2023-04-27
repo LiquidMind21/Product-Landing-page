@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo Play', sans-serif;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 65%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+
+}
+
+.bg {
+    width: 180rem;
+    height: 180rem;
+    border-radius: 50%;
+    background-color: #3b3f4b;
+    position: absolute;
+
+}
+
+.bg-1 {
+    left: -45%;
+    top: -10%;
+}
+
+.bg-2 {
+    right: -15%;
+    top: 35%;
+}
+
+.card {
+    width: 120rem;
+    height: 70rem;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    border-radius: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.7);
+}
+
+.card-bg-wrapper {
+    width: 100%;
+    height: 100;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-bg {
+    width: 100%;
+    height: 200%;
+    background-color: #979494;
+    position: absolute;
+    left: -55%;
+    top: -50%;
+    transform: rotateZ(-40deg);
+    border-radius: 0 50% 50% 0%;
+}
+
+.card-heading {
+    position: absolute;
+    top: 2%;
+    left: 76%;
+    transform: translateX(-50%);
+    font-size: 25rem;
+    z-index: -1;
+    color: #373737;
+    letter-spacing: 3rem;
+    text-transform: uppercase;
+    opacity: 0.23;
+}
+
+.card img {
+    position: absolute;
+    top: -2%;
+    left: -5%;
+}
+
+.shadow1 {
+    width: 20rem;
+    height: 80%;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.8), transparent);
+    border-radius: 0 50% 50% 0;
+    filter: blur(2.4rem);
+    opacity: 0.2;
+    transform: rotateY(45deg);
+}
+
+.shadow2 {
+    width: 25rem;
+    height: 25rem;
+    position: absolute;
+    bottom: -4%;
+    left: 25%;
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.7), transparent);
+    border-radius: 50%;
+    filter: blur(2rem);
+    opacity: 0.5;
+    transform: rotateY(45deg);
+}
+
+.card-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    padding: 5rem;
+}
+
+.small-heading {
+    margin-top: 6rem;
+    font-size: 7rem;
+    text-transform: uppercase;
+    background: linear-gradient(25deg, #d6784c, #f34932 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.main-heading {
+
+    font-size: 10rem;
+    text-transform: uppercase;
+    margin: 0 0.5rem 3rem;
+    color: #ddd;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.sub-heading {
+    font-size: 2.3rem;
+    font-weight: 340;
+    text-transform: uppercase;
+    color: #ddd;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.card-content p {
+    font-size: 1.5rem;
+    color: #aaa;
+    line-height: 1.3;
+    font-weight: 400;
+    width: 40rem;
+
+}
+
+.price-bg {
+    position: absolute;
+    bottom: 14rem;
+    left: 50%;
+    font-size: 12rem;
+    opacity: 0.2;
+}
+
+.price-main {
+    position: absolute;
+    font-size: 2rem;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    right: 15rem;
+}
+
+.card-btn {
+    background: linear-gradient(25deg, #d6784c, #f34932 60%);
+    border-radius: 2rem;
+    color: #ddd;
+    cursor: pointer;
+    bottom: 11rem;
+    height: 3rem;
+    right: 10rem;
+    width: 20rem;
+    transition: 5s ease-in-out;
+}
+
+.card-btn:hover {
+    background: linear-gradient(rgb(131, 130, 130), transparent);
+    box-shadow: rgba(0, 0, 0, 0.7);
+}
